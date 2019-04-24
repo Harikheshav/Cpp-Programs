@@ -1,9 +1,9 @@
 #include <iostream.h>
 using namespace std; 
-int stack[100], n=100, top=-1;
+int stack[100], n=100, top=-1;// to avoid garbage values
 void push(int val) {
    if(top>=n-1)
-      cout<<"Stack Overflow"<<endl; 
+      cout<<"Stack Overflow"<<endl; //maximum limit of array
    else {
       top++;
       stack[top]=val;
@@ -11,20 +11,20 @@ void push(int val) {
 }
 void pop() {
    if(top<=-1)
-      cout<<"Stack Underflow"<<endl;
+      cout<<"Stack Underflow"<<endl; //minimum limit
    else {
       cout<<"The popped element is "<< stack[top] <<endl;
       top--;
    }
 }
 void display() {
-   if(top>=0) {
+   if(top>=0) //something present{
       cout<<"Stack elements are:";
       for(int i=top; i>=0; i--)
          cout<<stack[i]<<" ";
          cout<<endl;
    } else
-      cout<<"Stack is empty";
+      cout<<"Stack is empty"; 
 }
 int main() {
    int ch, val; 
@@ -58,6 +58,6 @@ int main() {
             cout<<"Invalid Choice"<<endl;
          }
       }
-   }while(ch!=4); 
+   }while(ch!=4); // Pressing 4 goes out of the loop ending program
       return 0;
 }
