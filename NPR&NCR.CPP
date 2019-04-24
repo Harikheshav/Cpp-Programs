@@ -17,12 +17,9 @@ void main()
 	cout<<"NCR value = "<<ncr<<"\n";
 	getch();
 }
-long int fact(int x)          //defining the function or function definition
+long int fact(int x)          //function definition
 {
-	int i, f=1;
-	for(i=2; i<=x; i++)
-	{
-		f=f*i;
-	}
-	return f;
+  if(x==1) return 1
+
+  else return x*fact(x-1);
 }
