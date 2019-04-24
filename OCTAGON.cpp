@@ -6,11 +6,10 @@ int main()
      int side,line=1,star=1,space=1,no_of_spaces,no_of_stars;
 
      cout << "Enter length of the side of the Octagon: ";
-     cin >> side;
-
+     cin >> side; // 1 asterik =1 unit
      cout << "\n\n";
 
-     no_of_spaces = side;
+     no_of_spaces = side; 
      no_of_stars = side;
 
      for (line = 1; line <= side; line++){
