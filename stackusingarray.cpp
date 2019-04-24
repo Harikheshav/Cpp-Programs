@@ -58,6 +58,6 @@ int main() {
             cout<<"Invalid Choice"<<endl;
          }
       }
-   }while(ch!=4); // Pressing 4 goes out of the loop ending program
+   }while(ch!=4); // Pressing 4 to go out of the loop ending program
       return 0;
 }
