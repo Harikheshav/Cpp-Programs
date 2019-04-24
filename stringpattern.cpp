@@ -5,10 +5,10 @@ void main()
 {
 char s[5];(
 cout<<"Enter the string";
-gets(s);
-for(int i=0;s[i];i++)
+gets(s); //Reading string
+for(int i=0;s[i];i++) //Outer loop 
 {cout<<" ";
-for(int j=0;j<=i;j++)
+for(int j=0;j<=i;j++) //Inner loop
 cout<<s[j];
 cout<<"#\n";
 }
