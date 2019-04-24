@@ -1,4 +1,4 @@
-//NPR AND NCR
+//Permutations and Combinations
 #include<iostream.h>
 #include<conio.h>
 long int fact(int);   //function declaration
