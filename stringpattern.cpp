@@ -10,6 +10,6 @@ for(int i=0;s[i];i++) //Outer loop
 {cout<<" ";
 for(int j=0;j<=i;j++) //Inner loop
 cout<<s[j];
-cout<<"#\n";
+cout<<"##\n";
 }
 }
