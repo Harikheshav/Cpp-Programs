@@ -31,11 +31,30 @@
                     cin >> E[i].Salary;
               }
 
-              cout << "\nDetails of Employees"; //Printing Details
+              cout << "\nDetails of Employees"; //Printing Details 
               for(i=0;i<3;i++)
               cout << "\n"<< E[i].Id <<"\t"<< E[i].Name <<"\t"
-                       << E[i].Age <<"\t"<< E[i].Salary;
+                       << E[i].Age <<"\t"<< E[i].Salary
+                 
+              sort(E); //BubbleSort
 
-
+              cout << "\nDetails of Employees after sorting"; //Printing Details 
+              for(i=0;i<3;i++)
+              cout << "\n"<< E[i].Id <<"\t"<< E[i].Name <<"\t"
+                       << E[i].Age <<"\t"<< E[i].Salary
        }
+void sort(Employee E[],int n=3)
+   { int i,j; 
+   Employee temp;
+    for(i=1;i<n;++i)
+	{
+		for(j=0;j<(n-i);++j)
+			if(E[j].Id>E[j+1].Id)
+			{
+				temp=E[j];
+				E[j]=E[j+1];
+				E[j+1]=temp;
+			}
+	}
+	
 
