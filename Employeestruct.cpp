@@ -11,12 +11,12 @@
        void main()
        {
               int i;
-              Employee E[ 3 ];         //Statement   1
+              Employee E[ 3 ];         //Array of Structure
 
-              for(i=0;i<3;i++)
+              for(i=0;i<3;i++) //Reading Details
               {
 
-              cout << "\nEnter details of " << i+1 << " Employee";
+              cout << "\nEnter details of " << i+1 << " Employee";//Array index 'i' starts with 0
 
                     cout << "\n\tEnter Employee Id : ";
                     cin >> E[i].Id;
@@ -31,7 +31,7 @@
                     cin >> E[i].Salary;
               }
 
-              cout << "\nDetails of Employees";
+              cout << "\nDetails of Employees"; //Printing Details
               for(i=0;i<3;i++)
               cout << "\n"<< E[i].Id <<"\t"<< E[i].Name <<"\t"
                        << E[i].Age <<"\t"<< E[i].Salary;
